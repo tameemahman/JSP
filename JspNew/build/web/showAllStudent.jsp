@@ -28,7 +28,7 @@
                 <th scope="col">Action</th>
             </tr>
         </thead>
-        
+
         <tbody>
             <c:forEach items="${list}" var="s">
                 <tr>
@@ -38,10 +38,10 @@
                     <td>${s.getSubject()}</td>
                     <td>${s.getGender()}</td>
                     <td>
-                        <button type="submit" class="btn btn-primary">Edit</button>
-                        <button type="submit" class="btn btn-warning">Delete</button>
+                       <a  class="btn btn-primary" href="editForm.jsp?id=${s.getId()}" >Edit</a>
+                        <a  class="btn btn-warning" href="delete.jsp?id=${s.getId()}">Delete</a>
                     </td>
-                    
+
                 </tr>               
             </c:forEach>            
         </tbody>
@@ -51,7 +51,7 @@
 </div>
 
 <div class="mb-3">
-    
+
 </div>
 
 
